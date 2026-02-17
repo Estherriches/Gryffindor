@@ -32,3 +32,5 @@ def my_function():
     print(x)
     
     my_function()
+    
+# Enclosing scope means    
