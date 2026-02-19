@@ -46,6 +46,54 @@ def check_day():
         case _:
             print("You need prayers")
 
-check_day()
 
-pr
+
+# def parity():
+#     user_input = int(input("enter a number : "))
+#     if  user_input % 2 == 0:
+#         print("Even")
+#     else: 
+#         print("Odd")
+
+
+# def parity():
+#     user_input = int(input("enter a number : "))
+#     if  user_input % 3 == 0:
+#         print("Odd")
+#     else: 
+#         print("Even")
+
+
+# # lecture 2 
+# i = 0
+# while i != 2 :
+#     print("meow")
+#     i 
+
+
+# animal = "cat"
+# for loop
+# for letter in  range(1,len(animal)):
+#     print(animal[letter])
+
+
+#enumerate use case
+# for index, letter in enumerate(animal):
+#     print(letter, index)
+
+# def print_width():
+#     sign = "#"
+    
+#     for i in range(3):
+#         print("#" * 5)
+
+
+# def calc(width , height):
+#     return width  + "\n" + "" + height
+
+# print(calc("###", "###"))
+
+try: 
+    print()
+except NameError:
+    print("This is a Name error") 
