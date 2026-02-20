@@ -5,6 +5,11 @@ Write a program to have the computer randomly select a number between 1 and
 hints if the guess is too high or too low.
 
 TODO:
+- functional programming 
+- a function to ask the minimum and maximum numbers 
+- restrict user to enter only numbers
+- use while loops 
+- a function to serve as the front page of the game
 
 """
 import random
@@ -26,6 +31,8 @@ def number_guessing():
                 break
             except (ValueError, TypeError) as e:
                 print(e, "enter valid number")
+                continue
+                
         
         while True:
             try:
