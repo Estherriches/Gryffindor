@@ -26,25 +26,10 @@ def get_user_input():
         except (ValueError, TypeError) as e:
             print("invalid input  ",e)
             continue
+    Source = input ("Source of Currency: \n \n1: GHC \n2: USD \n3: EUR \n4: GBP \n ").strip().upper()
 
-    
-    try:
-
-        Source = input ("Source of Currency: \n \n1: GHC \n2: USD \n3: EUR \n4: GBP \n ").strip().upper()
-    except ValueError as e:
-        return f"error: {e}"
-    except NameError as e:
-        return f"error: {e}"
-    
-
+    Target = input ("Target  Currency: \n \n1: GHC \n2: USD \n3: EUR \n4: GBP \n ").strip().upper()
   
-    try:
-
-        Target = input ("Target  Currency: \n \n1: GHC \n2: USD \n3: EUR \n4: GBP \n ").strip().upper()
-    except ValueError as e:
-        return f"error: {e}"
-    except NameError as e:
-        return f"error: {e}"
     
 
 
@@ -123,54 +108,54 @@ def usd_to_ghc(amount: float):
 
 
     cash = amount * 11.25
-    return f'USD{cash:.2f}'
+    return f'GHC {cash:.2f}'
 
 def ghc_to_usd(amount: float):
     cash = amount * 0.091
-    return f"GHC{cash:.2f}"
+    return f"USD {cash:.2f}"
 
 
 def euro_to_ghc(amount:float):
     cash = amount * 12.93
-    return f"EUR{cash:.2f}"
+    return f"GHC {cash:.2f}"
 
 def ghc_to_euro(amount: float):
     cash = amount * 0.08
-    return f"GHC{cash:.2f}"
+    return f"EUR {cash:.2f}"
 
 
 def gbp_to_ghc(amount: float):
     cash = amount * 14.81
-    return f"GBP{cash:.2f}"
+    return f"GHC{cash:.2f}"
 
 def ghc_to_gbp(amount: float):
     cash = amount * 0.07
-    return f"GHC{cash:.2f}"
+    return f"GBP {cash:.2f}"
 
 
 def usd_to_euro(amount: float):
     cash = amount * 0.85
-    return f"USD{cash:.2f}"
+    return f"EUR {cash:.2f}"
 
 def euro_to_usd(amount:float):
     cash = amount * 1.18
-    return f"EUR{cash:2f}"
+    return f"USD {cash:2f}"
 
 def usd_to_gbp(amount: float):
     cash = amount * 0.74
-    return f"USD{cash:.2f}"
+    return f"GBP {cash:.2f}"
 
 def gbp_to_usd(amount: float):
     cash = amount * 1.35
-    return f"GBP{cash:.2f}"
+    return f"USD {cash:.2f}"
 
 def euro_to_gbp(amount: float):
     cash = amount * 0.87
-    return f"EUR{cash:.2f}"
+    return f"GBP {cash:.2f}"
 
 def gbp_to_euro(amount: float):
     cash = amount * 1.14
-    return f"GBP{cash:.2f}"
+    return f"EUR {cash:.2f}"
 
 
 if __name__ == "__main__":
