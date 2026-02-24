@@ -1,6 +1,7 @@
 
 """
 testing my website to see if its working or down
+this is only a basic function - just trying out my server site 
 """
 
 import requests
